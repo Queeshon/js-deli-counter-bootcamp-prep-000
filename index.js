@@ -14,17 +14,20 @@ function nowServing (katzDeliLine){
 }
 
 function currentLine(katzDeliLine){
-  if (!katzDeliLine.length){
-    return ("The line is currently empty.")
-  }
-
   var pastrami = [];
 
-  for (var i = 0; i<katzDeliLine; i++){
-    pastrami.push (i+1 + '. ' + katzDeliLine[i]);
-  }
-  console.log ('The line is currently: ' + pastrami)
-  return `The line is currently: ${pastrami.join(', ')}`;
+let i = 0
+while (i<katzDeliLine.length) {
+  pastrami.push (' '+ [i+1] + '. ' + katzDeliLine[i])
+  i++
+}
+if (!katzDeliLine.length){
+  return ("The line is currently empty.")
+} else {
+  return ('The line is currently:' + pastrami)
+}
+
+
 }
 /*  var pastrami = "The line is currently: "
 
