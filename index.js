@@ -14,7 +14,7 @@ function nowServing (katzDeliLine){
 }
 
 function currentLine(katzDeliLine){
-  if (!katzDeliLine){
+  if (!katzDeliLine.length){
     return ("The line is currently empty.")
   }
   const pastrami = []
@@ -22,5 +22,5 @@ function currentLine(katzDeliLine){
   for (var i = 0; i < katzDeliLine; i++){
     pastrami.push (`${i + 1}. ${line[i]}`)
   }
-  return `The line is currently: ${pastrami.join(', ')}`
+  return (`The line is currently: ${pastrami.join(, )}`)
 }
