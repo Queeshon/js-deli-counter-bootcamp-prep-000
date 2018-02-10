@@ -19,8 +19,8 @@ function currentLine(katzDeliLine){
   }
   var pastrami = "The line is currently: "
 
-  for (var i = 0; i < katzDeliLine; i++){
+  for (var i = 0; i < katzDeliLine-1; i++){
     pastrami += (`${i + 1}. ${katzDeliLine[i]}`) + ', '
   }
-  pastrami += (`${katzDeliLine.length}. ${katzDeliLine[katzDeliLine.length]}`)
+  pastrami += (`${katzDeliLine.length}. ${katzDeliLine[katzDeliLine.length-1]}`)
 }
