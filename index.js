@@ -23,6 +23,7 @@ function currentLine(katzDeliLine){
   for (var i = 0; i<katzDeliLine; i++){
     pastrami.push (i+1 + '.' + katzDeliLine[i]);
   }
+  console.log ('The line is currently: ' + pastrami)
   return `The line is currently: ${pastrami.join(', ')}`;
 }
 /*  var pastrami = "The line is currently: "
