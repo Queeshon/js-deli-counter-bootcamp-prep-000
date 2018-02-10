@@ -22,5 +22,5 @@ function currentLine(katzDeliLine){
   for (var i = 0; i < katzDeliLine-1; i++){
     pastrami += (`${i + 1}. ${katzDeliLine[i]}`) + ', '
   }
-  pastrami += (`${katzDeliLine.length}. ${katzDeliLine[katzDeliLine.length-1]}`)
+  pastrami += (`${katzDeliLine.length+1}. ${katzDeliLine[katzDeliLine.length-1]}`)
 }
